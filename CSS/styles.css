@@ -197,6 +197,33 @@ body {
     width: 100%;
 }
 
+/*  Galeria */
+
+.galeria {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 530px;
+}
+
+.galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.galeria img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+/* Responsive */
+
 @media (min-width:768px) {
     .nav {
         gap: 2em;
